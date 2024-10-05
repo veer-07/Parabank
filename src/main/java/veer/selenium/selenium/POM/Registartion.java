@@ -42,6 +42,8 @@ public WebDriver driver;
 	WebElement password;
 	@FindBy(css="#repeatedPassword")
 	WebElement confirm;
+	@FindBy(css="input[value='Register']")
+	WebElement RegButton;
 	
 	
 //	Scanner sc=new Scanner(System.in);
@@ -55,8 +57,8 @@ public WebDriver driver;
 	String zipcode="zipcode";
 	String phone="007";
 	String ssns="378";
-	String urname="Veeran";
-	String passwords="1234*";
+	String urname="Veeraa";
+	String passwords="12345*";
 //	public void name(String fname,String lname) {
 //		Fname.sendKeys(fname);
 //		Lname.sendKeys(lname);
@@ -79,19 +81,23 @@ public WebDriver driver;
 		phones.sendKeys(phone);
 		ssn.sendKeys(ssns);
 		Uname.sendKeys(urname);
-		confirm.sendKeys(urname);
 		password.sendKeys(passwords);
+		confirm.sendKeys(passwords);
+		RegButton.click();
 		
 	}
 	
 	@FindBy(css="a[href='updateprofile.htm']")
 	WebElement updatecontact;
+	
 	@FindBy(css="input[value='Update Profile']")
 	WebElement updatebutton;
 	
 	@FindBy(css="#rightPanel")
 	WebElement updateMessage;
+	
 public void updateContact() throws InterruptedException {
+	Thread.sleep(1000);
 	updatecontact.click();
 	Fname.sendKeys(name);
 	Lname.sendKeys(lname);

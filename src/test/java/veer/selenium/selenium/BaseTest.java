@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import veer.selenium.selenium.POM.ApplyLoan;
 import veer.selenium.selenium.POM.POM;
 import veer.selenium.selenium.POM.Registartion;
 import veer.selenium.selenium.POM.TransferFund;
@@ -22,8 +23,13 @@ public class BaseTest  extends POM{
 //			System.setProperty("chromedriver","C:\\Users\\veere\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chromium-driver.exe" );
 //			driver.get("")
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+			
+//			Registartion R=new Registartion(driver);
+//			R.register();
+			
+			Thread.sleep(1000);
 			POM c=new POM(driver);
-			c.login("veeresh","1234*");
+			c.login("veeresha","123456*");
 			
 			String a=driver.findElement(By.cssSelector(".title")).getText();
 			
@@ -31,9 +37,15 @@ public class BaseTest  extends POM{
 			System.out.println(z);
 			c.AccInfo();
 			TransferFund t=new TransferFund(driver);
-			t.TransferFunds("14010","14121");
+//			t.TransferFunds("14010","14121");
+			
 			Registartion r=new Registartion(driver);
 			r.updateContact();
+			ApplyLoan AL=new ApplyLoan(driver);
+			AL.ApplyLoans("902789","9920");
+			
+			
+			
 //			String SAVINGS;
 //			newAcc(SAVINGS);
 //			newAcc();
