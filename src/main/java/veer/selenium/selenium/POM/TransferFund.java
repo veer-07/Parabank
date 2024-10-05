@@ -40,6 +40,7 @@ public void TransferFunds(String Acc1,String Acc2) throws InterruptedException {
 	transferbutton.click();
 	amounts.sendKeys("1290");
 	Select dropdown = new Select(options);
+	Thread.sleep(1000);
 	selectDropdownByVisibleText(options,Acc1);
 	Select dropdon = new Select(optionss);
 	selectDropdownByValue(optionss,Acc2);
@@ -47,6 +48,7 @@ public void TransferFunds(String Acc1,String Acc2) throws InterruptedException {
 	Thread.sleep(1000);
 	System.out.println("Account Transfer Details are shown below:");
 	System.out.println("=========================================");
+	Thread.sleep(1000);
 	System.out.println(transferResults.getText());
 
 }

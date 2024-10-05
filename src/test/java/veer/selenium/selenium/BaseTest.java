@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import veer.selenium.selenium.POM.POM;
+import veer.selenium.selenium.POM.Registartion;
+import veer.selenium.selenium.POM.TransferFund;
 
 public class BaseTest  extends POM{
 	public WebDriver driver;
@@ -28,7 +30,10 @@ public class BaseTest  extends POM{
 			boolean z=a.equalsIgnoreCase("Accounts Overview");
 			System.out.println(z);
 			c.AccInfo();
-			c.TransferFunds("16674","13788");
+			TransferFund t=new TransferFund(driver);
+			t.TransferFunds("14010","14121");
+			Registartion r=new Registartion(driver);
+			r.updateContact();
 //			String SAVINGS;
 //			newAcc(SAVINGS);
 //			newAcc();

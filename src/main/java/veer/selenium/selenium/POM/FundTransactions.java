@@ -42,6 +42,9 @@ public class FundTransactions extends Abstracts{
 	@FindBy(css="button[type='submit']")
 	WebElement FindTransaction;
 	
+	@FindBy(css="#rightPanel")
+	WebElement TranResults;
+	
 public void TransferFundsById(String id) throws InterruptedException {
 	FundButton.click();
 	selectDropdownByValue(accnum,"16674");
@@ -69,6 +72,7 @@ public void Amount(String amt) throws InterruptedException {
 	selectDropdownByValue(accnum,"16674");
 	ammount.sendKeys(amt);
 	FindTransaction.click();
+	System.out.println(TranResults.getText());
 
 }
 

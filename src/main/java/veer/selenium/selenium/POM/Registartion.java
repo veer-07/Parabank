@@ -56,7 +56,7 @@ public WebDriver driver;
 	String phone="007";
 	String ssns="378";
 	String urname="Veeran";
-	
+	String passwords="1234*";
 //	public void name(String fname,String lname) {
 //		Fname.sendKeys(fname);
 //		Lname.sendKeys(lname);
@@ -75,9 +75,36 @@ public WebDriver driver;
 		RAddress.sendKeys(cities);
 		city.sendKeys(cities);
 		state.sendKeys(states);
+		zipcodes.sendKeys(zipcode);
+		phones.sendKeys(phone);
 		ssn.sendKeys(ssns);
 		Uname.sendKeys(urname);
 		confirm.sendKeys(urname);
+		password.sendKeys(passwords);
+		
+	}
+	
+	@FindBy(css="a[href='updateprofile.htm']")
+	WebElement updatecontact;
+	@FindBy(css="input[value='Update Profile']")
+	WebElement updatebutton;
+	
+	@FindBy(css="#rightPanel")
+	WebElement updateMessage;
+public void updateContact() throws InterruptedException {
+	updatecontact.click();
+	Fname.sendKeys(name);
+	Lname.sendKeys(lname);
+	RAddress.sendKeys(cities);
+	city.sendKeys(cities);
+	state.sendKeys(states);
+	zipcodes.sendKeys(zipcode);
+	phones.sendKeys(phone);
+	updatebutton.click();
+	Thread.sleep(1000);
+	System.out.println(updateMessage.getText());
+	
+		
 		
 		
 		

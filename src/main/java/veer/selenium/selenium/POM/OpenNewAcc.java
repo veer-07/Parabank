@@ -53,6 +53,11 @@ public class OpenNewAcc extends Abstracts{
 		String y=ThanksText.getText();
 		System.out.print(y);
 	}
+	
+	
+	
+	
+	
 
 	
 }
