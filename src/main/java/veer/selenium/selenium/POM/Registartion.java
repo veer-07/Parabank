@@ -44,6 +44,8 @@ public WebDriver driver;
 	WebElement confirm;
 	@FindBy(css="input[value='Register']")
 	WebElement RegButton;
+	@FindBy(css="a[href='logout.htm']")
+	WebElement logout;
 	
 	
 //	Scanner sc=new Scanner(System.in);
@@ -84,6 +86,7 @@ public WebDriver driver;
 		password.sendKeys(passwords);
 		confirm.sendKeys(passwords);
 		RegButton.click();
+		logout.click();
 		
 	}
 	

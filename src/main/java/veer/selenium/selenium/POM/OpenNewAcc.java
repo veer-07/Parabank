@@ -21,33 +21,34 @@ public class OpenNewAcc extends Abstracts{
  
 	}
 	
-	@FindBy(xpath="//*[contains(@href,'open')]")
+	@FindBy(css="a[href='openaccount.htm']")
 	WebElement newAccount;
 	
 	@FindBy(xpath="//select[@id='type']")
 	WebElement dropdowns;
 	
 	@FindBy(xpath="//input[@value='Open New Account']")
-	WebElement NewAccount;
+	WebElement NewAccountin;
 	@FindBy(xpath="//h1[contains(text(),'Account Opened!')]")
 	WebElement OpenedStat;
 	@FindBy(xpath="//p[contains(text(),'Congratulations, your account is now open.')]")
 	WebElement ThanksText;
 	
 	
-	Scanner sc=new Scanner(System.in);
-	String AccType=sc.next();
+//	Scanner sc=new Scanner(System.in);
+//	String AccType=sc.next();
 //	System.out.print("Enter the account type");
 	
-	public void newAcc() throws InterruptedException {
-		explicitwait(5);
+	public void newAcc(String type) throws InterruptedException {
+//		explicitwait(5);
+//		Thread.sleep(2000);
 		newAccount.click();
 		explicitwait(5);
 		Select dropdown = new Select(dropdowns);
 		explicitwait(5);
-		dropdown.selectByVisibleText("SAVINGS");
+		dropdown.selectByVisibleText(type);
 		Thread.sleep(1000);
-		NewAccount.click();
+		NewAccountin.click();
 		String x=OpenedStat.getText();
 		System.out.print(x);
 		String y=ThanksText.getText();

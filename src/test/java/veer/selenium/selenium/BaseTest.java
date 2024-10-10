@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import veer.selenium.selenium.POM.ApplyLoan;
+import veer.selenium.selenium.POM.OpenNewAcc;
 import veer.selenium.selenium.POM.POM;
 import veer.selenium.selenium.POM.Registartion;
 import veer.selenium.selenium.POM.TransferFund;
@@ -29,25 +30,29 @@ public class BaseTest  extends POM{
 			
 			Thread.sleep(1000);
 			POM c=new POM(driver);
-			c.login("veeresha","123456*");
+			c.login("Veeraa","12345*");
 			
 			String a=driver.findElement(By.cssSelector(".title")).getText();
 			
 			boolean z=a.equalsIgnoreCase("Accounts Overview");
 			System.out.println(z);
 			c.AccInfo();
+			Thread.sleep(1500);
+			OpenNewAcc ad=new OpenNewAcc(driver);
+			ad.newAcc("SAVINGS");
+//			ad.n
 			TransferFund t=new TransferFund(driver);
-//			t.TransferFunds("14010","14121");
+			t.TransferFunds("34878","24999");
 			
 			Registartion r=new Registartion(driver);
 			r.updateContact();
-			ApplyLoan AL=new ApplyLoan(driver);
-			AL.ApplyLoans("902789","9920");
+//			ApplyLoan AL=new ApplyLoan(driver);
+//			AL.ApplyLoans("902789","9920");
 			
 			
 			
 //			String SAVINGS;
-//			newAcc(SAVINGS);
+			
 //			newAcc();
 //			driver.findElement(By.xpath("//*[contains(@href,'open')]")).click();
 //			Select dropdown = new Select(driver.findElement(By.xpath("//select[@id='type']")));
