@@ -59,8 +59,8 @@ public WebDriver driver;
 	String zipcode="zipcode";
 	String phone="007";
 	String ssns="378";
-	String urname="Veeraa";
-	String passwords="12345*";
+//	String urname="Veera";
+//	String passwords="12345*";
 //	public void name(String fname,String lname) {
 //		Fname.sendKeys(fname);
 //		Lname.sendKeys(lname);
@@ -70,11 +70,11 @@ public WebDriver driver;
 //		
 //	}
 	
-	public  void register() throws InterruptedException {
+	public  void register(String uname, String Password) throws InterruptedException {
 		explicitwait(500);
 		Thread.sleep(1000);
 		regi.click();
-		Fname.sendKeys(name);
+		Fname.sendKeys(uname);
 		Lname.sendKeys(lname);
 		RAddress.sendKeys(cities);
 		city.sendKeys(cities);
@@ -82,9 +82,9 @@ public WebDriver driver;
 		zipcodes.sendKeys(zipcode);
 		phones.sendKeys(phone);
 		ssn.sendKeys(ssns);
-		Uname.sendKeys(urname);
-		password.sendKeys(passwords);
-		confirm.sendKeys(passwords);
+		Uname.sendKeys(uname);
+		password.sendKeys(Password);
+		confirm.sendKeys(Password);
 		RegButton.click();
 		logout.click();
 		

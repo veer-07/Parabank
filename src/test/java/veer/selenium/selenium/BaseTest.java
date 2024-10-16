@@ -23,31 +23,37 @@ public class BaseTest  extends POM{
 			WebDriver driver=new ChromeDriver();
 //			System.setProperty("chromedriver","C:\\Users\\veere\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chromium-driver.exe" );
 //			driver.get("")
+			
+			String Uname="rafkj";
+			String Pass="87589";
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			
-//			Registartion R=new Registartion(driver);
-//			R.register();
+			Registartion R=new Registartion(driver);
+			R.register(Uname,Pass);
 			
 			Thread.sleep(1000);
 			POM c=new POM(driver);
-			c.login("Veeraa","12345*");
+			c.login(Uname,Pass);
 			
 			String a=driver.findElement(By.cssSelector(".title")).getText();
 			
 			boolean z=a.equalsIgnoreCase("Accounts Overview");
 			System.out.println(z);
 			c.AccInfo();
-			Thread.sleep(1500);
-			OpenNewAcc ad=new OpenNewAcc(driver);
-			ad.newAcc("SAVINGS");
-//			ad.n
-			TransferFund t=new TransferFund(driver);
-			t.TransferFunds("34878","24999");
+//			c.AccoutNumbersCreated();
+
 			
-			Registartion r=new Registartion(driver);
-			r.updateContact();
-//			ApplyLoan AL=new ApplyLoan(driver);
-//			AL.ApplyLoans("902789","9920");
+			//			Thread.sleep(1500);
+//			OpenNewAcc ad=new OpenNewAcc(driver);
+//			ad.newAcc("SAVINGS");
+////			ad.n
+//			TransferFund t=new TransferFund(driver);
+//			t.TransferFunds("34878","24999");
+//			
+//			Registartion r=new Registartion(driver);
+//			r.updateContact();
+////			ApplyLoan AL=new ApplyLoan(driver);
+////			AL.ApplyLoans("902789","9920");
 			
 			
 			
