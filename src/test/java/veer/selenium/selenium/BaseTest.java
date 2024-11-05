@@ -29,7 +29,7 @@ public class BaseTest  extends POM{
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			
 			Registartion R=new Registartion(driver);
-			R.register(Uname,Pass);
+//			R.register(Uname,Pass);
 			
 			Thread.sleep(1000);
 			POM c=new POM(driver);
