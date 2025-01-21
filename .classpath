@@ -56,5 +56,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/SELDrivers/selenium-server-4.22.0.jar"/>
+	<classpathentry kind="lib" path="C:/SELDrivers/cucumber-java-7.20.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

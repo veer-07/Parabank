@@ -13,9 +13,9 @@ public class BaseT {
 	WebDriver driver=new ChromeDriver();
 //	driver.get("")
 	driver.get("https://parabank.parasoft.com/parabank/index.htm");
-	POM p=new POM(driver);
-	p.login("Veeraa","12345*");
-	
+//	POM p=new POM(driver);
+//	p.login("Veeraa","12345*");
+//	
 //	String a=driver.findElement(By.cssSelector(".title")).getText();
 //	
 //	boolean z=a.equalsIgnoreCase("Accounts Overview");
@@ -24,11 +24,11 @@ public class BaseT {
 ////	newAcc();
 //	OpenNewAcc as=new OpenNewAcc(driver);
 //	as.newAcc("Savings");
-	
-	driver.findElement(By.cssSelector("a[href='openaccount.htm']")).click();
-	
-//	Registartion r=new Registartion(driver);
-//	r.register();
+//	
+//	driver.findElement(By.cssSelector("a[href='openaccount.htm']")).click();
+//	
+	Registartion r=new Registartion(driver);
+	r.register("Veeraa","12345*");
 	}
 
 }

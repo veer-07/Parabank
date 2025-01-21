@@ -21,7 +21,11 @@ public class Abstracts {
 			
 		}
 		
-		
+		public void initilize() {
+			
+			
+			
+		}
 		
 		public void explicitwait(int sec) {
 			WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
