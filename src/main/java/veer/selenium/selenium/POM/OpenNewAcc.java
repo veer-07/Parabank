@@ -15,7 +15,7 @@ public class OpenNewAcc extends Abstracts{
 	public WebDriver driver;
 
 	public OpenNewAcc(WebDriver driver) {
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
  

@@ -13,7 +13,7 @@ public class FundTransactions extends Abstracts{
 	public WebDriver driver;
 
 	public FundTransactions(WebDriver driver) {
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
  

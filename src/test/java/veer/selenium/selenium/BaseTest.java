@@ -24,13 +24,13 @@ public class BaseTest  extends POM{
 //			System.setProperty("chromedriver","C:\\Users\\veere\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chromium-driver.exe" );
 //			driver.get("")
 			
-<<<<<<< HEAD
+
 			String Uname="veer";
 			String Pass="Password@12";
-=======
-			String Uname="rafkj";
-			String Pass="87589";
->>>>>>> 44347f92021bf1f738edc7ea93726dddde25b188
+//
+//			String Uname="rafkj";
+//			String Pass="87589";
+
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			
 			Registartion R=new Registartion(driver);

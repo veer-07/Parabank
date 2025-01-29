@@ -13,7 +13,7 @@ public class TransferFund extends Abstracts{
 	public WebDriver driver;
 
 	public TransferFund(WebDriver driver) {
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
  

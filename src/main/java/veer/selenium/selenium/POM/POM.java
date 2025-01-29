@@ -27,7 +27,7 @@ public class POM  extends Abstracts{
 		
 		
 		public POM(WebDriver driver) {
-			super(driver);
+			super( );
 			this.driver = driver;
 			PageFactory.initElements(driver, this);
      

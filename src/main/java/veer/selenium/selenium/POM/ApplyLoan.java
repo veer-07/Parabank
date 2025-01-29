@@ -15,7 +15,7 @@ public class ApplyLoan extends Abstracts{
 	public WebDriver driver;
 
 	public ApplyLoan(WebDriver driver) {
-		super(driver);
+		super();
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
  

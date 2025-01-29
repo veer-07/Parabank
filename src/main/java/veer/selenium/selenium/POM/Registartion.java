@@ -13,7 +13,7 @@ public class Registartion extends Abstracts{
  
 public WebDriver driver;
 	public Registartion(WebDriver driver) {
-		super(driver);
+		super( );
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
