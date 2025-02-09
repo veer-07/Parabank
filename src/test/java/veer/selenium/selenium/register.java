@@ -1,5 +1,7 @@
 package veer.selenium.selenium;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,7 +9,7 @@ import veer.selenium.selenium.POM.Registartion;
 import org.testng.annotations.Test;
 public class register {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 
 		WebDriver driver=new ChromeDriver();

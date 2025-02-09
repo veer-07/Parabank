@@ -20,6 +20,11 @@
 	  
     <dependencies>
 		
+<dependency>
+    <groupId>freemarker</groupId>
+    <artifactId>freemarker</artifactId>
+    <version>2.3.31</version> <!-- Or the version you're working with -->
+</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 <dependency>

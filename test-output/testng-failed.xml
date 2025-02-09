@@ -5,7 +5,7 @@
     <classes>
       <class name="veer.selenium.selenium.BaseT">
         <methods>
-          <include name="LoginPassMask"/>
+          <include name="BInCorrPass"/>
         </methods>
       </class> <!-- veer.selenium.selenium.BaseT -->
     </classes>

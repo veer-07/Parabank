@@ -17,17 +17,20 @@ public class BaseT extends BaseTests {
 
 
 		@Test
-		public void RegistrUser() throws InterruptedException, IOException {
+		public void ARegistrUser() throws InterruptedException, IOException {
 			BaseTests.initialization();
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 
 			Registartion r=new Registartion(driver);
-			r.register("Veera","12345*");
+			r.register("Veere","123452");
+//			closeBrowser();
 	}
 		@Test
-		public void InCorrPass() throws InterruptedException, IOException {
-			String Uname="Veera";
+		public void BInCorrPass() throws InterruptedException, IOException {
+			String Uname="Veern";
 			String Pass="12345*";
+//			String Uname="Veergd";
+//			String Pass="12345*";
 			BaseTests.initialization();
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			POM c=new POM(driver);
@@ -38,11 +41,11 @@ public class BaseT extends BaseTests {
 //			Assert.assertEquals("The username and password could not be verified.", Actual);
 			Assert.assertEquals(Actual,"The username and password could not be verified.");
 //			Assert.assertEquals( "The username and password could not be verified.",Text.equalsIgnoreCase(Text));
-			 
+//			closeBrowser();
 	}
 	
 		@Test
-		public void LoginFieldBlank() throws InterruptedException, IOException {
+		public void CLoginFieldBlank() throws InterruptedException, IOException {
 			BaseTests.initialization();
 			
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
@@ -50,16 +53,17 @@ public class BaseT extends BaseTests {
 			c.login("","");
 			String Actual= driver.findElement(By.cssSelector(".error")).getText();
 			Assert.assertEquals(Actual,"Please enter a username and password.");
-	}
+//			closeBrowser();
+			}
 		
 		@Test
-		public void LoginPassMask() throws InterruptedException, IOException {
+		public void DLoginPassMask() throws InterruptedException, IOException {
 						String Pass="12345*";
 						BaseTests.initialization();
 
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			POM c=new POM(driver);
-			c.login("sggsh","12345*");
+			c.login("1234","12345*");
 			String enteredPassword = driver.findElement(By.xpath("//input[@name='password']")).getAttribute("name");
 
 	        // Password should not be visible as plain text
@@ -68,25 +72,26 @@ public class BaseT extends BaseTests {
 	        } else {
 	            System.out.println("Test Passed: Password is properly masked");
 	        }
+//	        closeBrowser();
 	}
 		
 		
-		@Test
-		public void ACCOverview() throws InterruptedException, IOException {
-			String Uname="Veera";
-			String Pass="12345*";
- 
-			BaseTests.initialization();
-			Thread.sleep(1000);
-			POM c=new POM(driver);
-			c.login(Uname,Pass);
-			
-			String a=driver.findElement(By.cssSelector(".title")).getText();
-			
-			boolean z=a.equalsIgnoreCase("Accounts Overview");
-			System.out.println(z);
-			c.AccInfo();
-		}
+//		@Test
+//		public void EACCOverview() throws InterruptedException, IOException {
+//			String Uname="Veera";
+//			String Pass="12345*";
+// 
+//			BaseTests.initialization();
+//			Thread.sleep(1000);
+//			POM c=new POM(driver);
+//			c.login(Uname,Pass);
+//			
+//			String a=driver.findElement(By.cssSelector(".title")).getText();
+//			
+//			boolean z=a.equalsIgnoreCase("Accounts Overview");
+//			System.out.println(z);
+//			c.AccInfo();
+//		}
 		 
 }
 

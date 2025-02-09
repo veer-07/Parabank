@@ -1,5 +1,6 @@
 package veer.selenium.selenium.POM;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import org.openqa.selenium.WebDriver;
@@ -70,7 +71,7 @@ public WebDriver driver;
 //		
 //	}
 	
-	public  void register(String uname, String Password) throws InterruptedException {
+	public  void register(String uname, String Password) throws InterruptedException, IOException {
 		explicitwait(500);
 		Thread.sleep(1000);
 		regi.click();
@@ -85,8 +86,12 @@ public WebDriver driver;
 		Uname.sendKeys(uname);
 		password.sendKeys(Password);
 		confirm.sendKeys(Password);
+		getScreenshot("testcase1",driver);
+		Thread.sleep(100);
 		RegButton.click();
-		logout.click();
+		
+		
+//		logout.click();
 		
 	}
 	

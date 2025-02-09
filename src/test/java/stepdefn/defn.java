@@ -1,5 +1,7 @@
 package stepdefn;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.Given;
@@ -23,7 +25,7 @@ public class defn  extends POM{
 	
 	@Given("^i want to write a step with username (.+) and password (.+)$")
 	
-	public void step_with_username_and_password(String Uname, String pass) throws InterruptedException{
+	public void step_with_username_and_password(String Uname, String pass) throws InterruptedException, IOException{
 		
 		Registartion r=new Registartion(driver);
 		r.register(Uname,  pass);
