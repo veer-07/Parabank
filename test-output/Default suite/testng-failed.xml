@@ -5,7 +5,8 @@
     <classes>
       <class name="veer.selenium.selenium.BaseT">
         <methods>
-          <include name="BInCorrPass"/>
+          <include name="EACCOverview"/>
+          <include name="AppLyLoan"/>
         </methods>
       </class> <!-- veer.selenium.selenium.BaseT -->
     </classes>

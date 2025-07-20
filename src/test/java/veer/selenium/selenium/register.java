@@ -17,7 +17,7 @@ public class register {
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
 		
 		Registartion r=new Registartion(driver);
-		r.register("veer",  "Password@12");
+//		r.register("veer",  "Password@12");
 //		r.updateContact();
  
 		

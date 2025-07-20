@@ -52,14 +52,14 @@ public WebDriver driver;
 //	Scanner sc=new Scanner(System.in);
 //	System.out.print("Enter the values");
 //	String v=sc.next();
-	String name="Jack";
-	String lname="sparrow";
-	String address="Yoyo colony";
-	String cities="Veeerapur";
-	String states="Karnataka";
-	String zipcode="zipcode";
-	String phone="007";
-	String ssns="378";
+//	String name="Jack";
+//	String lname="sparrow";
+//	String address="Yoyo colony";
+//	String cities="Veeerapur";
+//	String states="Karnataka";
+//	String zipcode="zipcode";
+//	String phone="007";
+//	String ssns="378";
 //	String urname="Veera";
 //	String passwords="12345*";
 //	public void name(String fname,String lname) {
@@ -71,9 +71,9 @@ public WebDriver driver;
 //		
 //	}
 	
-	public  void register(String uname, String Password) throws InterruptedException, IOException {
+	public  void register(String name, String lname,String address,String cities,String states,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException {
 		explicitwait(500);
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		regi.click();
 		Fname.sendKeys(uname);
 		Lname.sendKeys(lname);
@@ -85,8 +85,8 @@ public WebDriver driver;
 		ssn.sendKeys(ssns);
 		Uname.sendKeys(uname);
 		password.sendKeys(Password);
-		confirm.sendKeys(Password);
-		getScreenshot("testcase1",driver);
+		confirm.sendKeys(con);
+//		getScreenshot("testcase"+""+Math.random(),driver);
 		Thread.sleep(100);
 		RegButton.click();
 		
@@ -104,24 +104,24 @@ public WebDriver driver;
 	@FindBy(css="#rightPanel")
 	WebElement updateMessage;
 	
-public void updateContact() throws InterruptedException {
-	Thread.sleep(1000);
-	updatecontact.click();
-	Fname.sendKeys(name);
-	Lname.sendKeys(lname);
-	RAddress.sendKeys(cities);
-	city.sendKeys(cities);
-	state.sendKeys(states);
-	zipcodes.sendKeys(zipcode);
-	phones.sendKeys(phone);
-	updatebutton.click();
-	Thread.sleep(1000);
-	System.out.println(updateMessage.getText());
-	
-		
-		
-		
-		
-	}
+//public void updateContact() throws InterruptedException {
+//	Thread.sleep(1000);
+//	updatecontact.click();
+//	Fname.sendKeys(name);
+//	Lname.sendKeys(lname);
+//	RAddress.sendKeys(cities);
+//	city.sendKeys(cities);
+//	state.sendKeys(states);
+//	zipcodes.sendKeys(zipcode);
+//	phones.sendKeys(phone);
+//	updatebutton.click();
+//	Thread.sleep(1000);
+//	System.out.println(updateMessage.getText());
+//	
+//		
+//		
+//		
+//		
+//	}
 
 }

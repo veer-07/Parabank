@@ -6,12 +6,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="optional" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
@@ -19,16 +13,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
-		<attributes>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="optional" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -37,47 +23,43 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/org/seleniumhq/selenium/selenium-api/4.22.0/selenium-api-4.22.0.jar" sourcepath="C:/Users/veere/.m2/repository/org/seleniumhq/selenium/selenium-api/4.22.0/selenium-api-4.22.0-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-api"/>
-			<attribute name="maven.version" value="4.22.0"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.22.0/selenium-chrome-driver-4.22.0.jar" sourcepath="C:/Users/veere/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.22.0/selenium-chrome-driver-4.22.0-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-chrome-driver"/>
-			<attribute name="maven.version" value="4.22.0"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/SELDrivers/poi-5.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/SELDrivers/poi-ooxml-5.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/veere/Downloads/eclipse-java-2023-09-R-win32-x86_64/eclipse/plugins/org.testng_7.4.0.r202105021533.jar" sourcepath="C:/Users/veere/Downloads/eclipse-java-2023-09-R-win32-x86_64/eclipse/plugins/org.testng.source_7.4.0.r202105021533.jar"/>
 	<classpathentry kind="lib" path="C:/SELDrivers/selenium-server-4.22.0.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/cucumber-java-7.20.1.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/testng-7.10.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar" sourcepath="C:/Users/veere/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9-sources.jar">
+	<classpathentry kind="lib" path="C:/SELDrivers/javafaker-1.0.2.jar"/>
+	<classpathentry kind="src" path="/ExcelData"/>
+	<classpathentry kind="lib" path="C:/SELDrivers/commons-io-2.16.1/commons-io-2.16.1.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar" sourcepath="C:/Users/veere/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="com.aventstack"/>
 			<attribute name="maven.artifactId" value="extentreports"/>
-			<attribute name="maven.version" value="5.0.9"/>
+			<attribute name="maven.version" value="5.1.2"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/SELDrivers/extentreports-2.41.2.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/commons-io-2.16.1/commons-io-2.16.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.1/webdrivermanager-5.1.1.jar" sourcepath="C:/Users/veere/.m2/repository/io/github/bonigarcia/webdrivermanager/5.1.1/webdrivermanager-5.1.1-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/io/cucumber/cucumber-java/4.7.4/cucumber-java-4.7.4.jar" sourcepath="C:/Users/veere/.m2/repository/io/cucumber/cucumber-java/4.7.4/cucumber-java-4.7.4-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
-			<attribute name="maven.artifactId" value="webdrivermanager"/>
-			<attribute name="maven.version" value="5.1.1"/>
+			<attribute name="maven.groupId" value="io.cucumber"/>
+			<attribute name="maven.artifactId" value="cucumber-java"/>
+			<attribute name="maven.version" value="4.7.4"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="/SeleniumFrameworkDesign"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

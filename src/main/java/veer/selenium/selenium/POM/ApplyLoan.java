@@ -36,8 +36,8 @@ public class ApplyLoan extends Abstracts{
 	@FindBy(xpath="//input[@value='Apply Now']")
 	WebElement ApplyBtn;
 
-	String Account="16896";
-	
+//	String Account="16896";
+	String Account="20670";
 public void ApplyLoans(String amt1,String amt2) throws InterruptedException   {
 //	Thread.sleep(1500);
 	LoanReq.click();
@@ -45,7 +45,7 @@ public void ApplyLoans(String amt1,String amt2) throws InterruptedException   {
 	LoanAmt.sendKeys(amt1);
 	downPay.sendKeys(amt2);
 	selectDropdownByValue(FromAcct,Account);
-	Thread.sleep(1000);
+	Thread.sleep(100);
 	ApplyBtn.click();
 
 }

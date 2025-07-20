@@ -8,7 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import TestComponents.BaseTests;
+import API_Parabank.chats.ExcelDataProvider;
+import testComponents.BaseTests;
+import veer.selenium.selenium.POM.ApplyLoan;
 import veer.selenium.selenium.POM.OpenNewAcc;
 import veer.selenium.selenium.POM.POM;
 import veer.selenium.selenium.POM.Registartion;
@@ -16,14 +18,14 @@ import veer.selenium.selenium.POM.Registartion;
 public class BaseT extends BaseTests {
 
 
-		@Test
-		public void ARegistrUser() throws InterruptedException, IOException {
+		@Test(dataProvider="excelData", dataProviderClass = ExcelDataProvider.class)
+		public void ARegistrUser(String name, String lname,String address,String cities,String state,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException  {
 			BaseTests.initialization();
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 
 			Registartion r=new Registartion(driver);
-			r.register("Veere","123452");
-//			closeBrowser();
+			r.register(name,lname,address,cities,state,zipcode,phone,ssns,uname,Password,con);
+						 
 	}
 		@Test
 		public void BInCorrPass() throws InterruptedException, IOException {
@@ -73,27 +75,43 @@ public class BaseT extends BaseTests {
 	            System.out.println("Test Passed: Password is properly masked");
 	        }
 //	        closeBrowser();
-	}
+	
+		}
 		
-		
-//		@Test
-//		public void EACCOverview() throws InterruptedException, IOException {
-//			String Uname="Veera";
-//			String Pass="12345*";
-// 
-//			BaseTests.initialization();
-//			Thread.sleep(1000);
-//			POM c=new POM(driver);
-//			c.login(Uname,Pass);
-//			
-//			String a=driver.findElement(By.cssSelector(".title")).getText();
-//			
-//			boolean z=a.equalsIgnoreCase("Accounts Overview");
-//			System.out.println(z);
-//			c.AccInfo();
-//		}
+		@Test
+		public void EACCOverview() throws InterruptedException, IOException {
+			String Uname="Veera";
+			String Pass="12345*";
+ 
+			BaseTests.initialization();
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+			Thread.sleep(1000);
+			POM c=new POM(driver);
+			c.login(Uname,Pass);
+			
+			String a=driver.findElement(By.cssSelector(".title")).getText();
+			
+			boolean z=a.equalsIgnoreCase("Accounts Overview");
+			System.out.println(z);
+			c.AccInfo();
+		}
 		 
-}
+		@Test
+		public void AppLyLoan() throws IOException, InterruptedException {
+			
+			BaseTests.initialization();driver.get("https://parabank.parasoft.com/parabank/index.htm");
+			String Uname="Veere";
+			String Pass="12536";
+			String amt1="19080";
+			String amt2="789";
+			POM c=new POM(driver);
+			c.login(Uname,Pass);
+			
+			ApplyLoan a=new ApplyLoan(driver);
+			a.ApplyLoans(amt1,amt2);
+			
+		}
 
+}
 
  
