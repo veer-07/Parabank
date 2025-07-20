@@ -55,7 +55,7 @@ import veer.selenium.selenium.BaseTest;
 			
 			String filePath = null;
 			try {
-				
+//				Thread.sleep(1000);
 				filePath = getScreenshot(result.getMethod().getMethodName(),driver);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -116,7 +116,7 @@ import veer.selenium.selenium.BaseTest;
 		}
 
 		
-//		@AfterSuite
+		@AfterSuite
 		@Override
 		public void onFinish(ITestContext context) {
 			// TODO Auto-generated method stub

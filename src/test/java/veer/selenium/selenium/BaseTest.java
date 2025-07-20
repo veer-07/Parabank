@@ -1,5 +1,10 @@
 package veer.selenium.selenium;
 
+<<<<<<< HEAD
+=======
+import java.io.IOException;
+
+>>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +22,11 @@ public class BaseTest  extends POM{
 			// TODO Auto-generated constructor stub
 		}
 	//
+<<<<<<< HEAD
 		public static void main(String[] args) throws InterruptedException {
+=======
+		public static void main(String[] args) throws InterruptedException, IOException {
+>>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 	// 
 			
 			WebDriver driver=new ChromeDriver();
@@ -38,7 +47,11 @@ public class BaseTest  extends POM{
 			
 			Thread.sleep(1000);
 			POM c=new POM(driver);
+<<<<<<< HEAD
 			c.login(Uname,Pass);
+=======
+			c.login();
+>>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 			
 			String a=driver.findElement(By.cssSelector(".title")).getText();
 			

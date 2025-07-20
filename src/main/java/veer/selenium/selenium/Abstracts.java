@@ -16,18 +16,82 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
+<<<<<<< HEAD
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+=======
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+>>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 
 import veer.selenium.selenium.POM.POM;
 
 public class Abstracts {
+<<<<<<< HEAD
 // public WebDriver driver;
 
  public WebDriver driver;
 		
+//		public Abstracts(WebDriver driver) {
+//			super();
+//			this.driver=driver;
+//			
+//		}
+		
+//		public WebDriver initilize() throws IOException {
+//			Properties prop = new Properties();
+//			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")
+//					+ "//src//main//java//Resource//global.properties");
+//			prop.load(fis);
+//			
+//			String browserName = System.getProperty("browser")!=null ? System.getProperty("browser") :prop.getProperty("browser");
+//			//prop.getProperty("browser");
+//
+//			if (browserName.contains("chrome")) {
+//				ChromeOptions options = new ChromeOptions();
+////				WebDriverManager.chromedriver().setup();
+//				System.setProperty("webdriver.chrome.driver", "C://Users//veere//.cache//selenium//chromedriver//win64//131.0.6778.264//chromedriver.exe");
+//				if(browserName.contains("headless")){
+//				options.addArguments("headless");
+//				}		
+//				driver = new ChromeDriver(options);
+////				driver.manage().window().setSize(new Dimension(1440,900));//full screen
+//
+//			} else if (browserName.equalsIgnoreCase("firefox")) {
+//				System.setProperty("webdriver.gecko.driver",
+//						"/Users/documents//geckodriver");
+//				driver = new FirefoxDriver();
+//				// Firefox
+//			} else if (browserName.equalsIgnoreCase("edge")) {
+//				// Edge
+//				System.setProperty("webdriver.edge.driver", "edge.exe");
+//				driver = new EdgeDriver();
+//			}
+//
+//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//			driver.manage().window().maximize();
+//			return driver;
+//			
+//			
+//		}
+		
+=======
+	
+	
+ public WebDriver driver;
+ public void   Abstracts(WebDriver driver) {
+	 this.driver=driver;
+	 PageFactory.initElements(driver, this);
+ }
  
 		
+ public void implicitwait(int sec) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec))
+;	}
+ 
+>>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 		public void explicitwait(int sec) {
 			WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
 		}
@@ -88,6 +152,11 @@ public class Abstracts {
 		        Select select = new Select(dropdownElement);
 		        select.selectByValue(value);
 		    }
+<<<<<<< HEAD
+=======
+
+		   
+>>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 	}
 
 

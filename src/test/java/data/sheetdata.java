@@ -44,7 +44,7 @@ public class sheetdata {
                 // Find the "Season" column index
                 while (cv.hasNext()) {
                     Cell firstCell = cv.next();
-                    if (firstCell.getStringCellValue().equalsIgnoreCase("user name")) {
+                    if (firstCell.getStringCellValue().equalsIgnoreCase("USER")) {
                         column = k;
                     }
                     k++;

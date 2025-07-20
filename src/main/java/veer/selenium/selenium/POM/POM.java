@@ -1,7 +1,14 @@
 package veer.selenium.selenium.POM;
 
+
 import java.util.ArrayList;
 import java.util.List;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -32,7 +39,7 @@ public class POM  extends Abstracts{
 			PageFactory.initElements(driver, this);
      
 		}
-		
+ 
 		
 				
 		//a[contains(@href,'register')]  
@@ -45,6 +52,18 @@ public class POM  extends Abstracts{
 			
 			username.sendKeys(Uname);
 			password.sendKeys(passwords);
+
+ 
+		public void login() throws IOException   {
+			Properties prp=new Properties();
+			FileInputStream fis=new FileInputStream("D:\\Java_Selenuim\\eclipse-workspace\\Final_ParaBank\\src\\main\\java\\Resource\\global.properties");
+			prp.load(fis);
+			driver.get(prp.getProperty("url"));
+			String Unames=prp.getProperty("Uname");
+			String Pass=prp.getProperty("Pass");
+			username.sendKeys(Unames);
+			password.sendKeys(Pass);
+ 
 			submit.click();
 			
 		}
@@ -62,9 +81,7 @@ public class POM  extends Abstracts{
 				Thread.sleep(1000);
 				System.out.println(a.getText()+"   ");
 			}
-			
-			
-			
+ 
 		}
 		@FindBy(xpath="//tr/td/a")
 		List<WebElement> Accounts;
@@ -96,31 +113,9 @@ public class POM  extends Abstracts{
 	        return textArray;
 			
 				}
-//			for(WebElement a:Accounts) {
-//				
-//				System.out.println("The avilable/created account numbers are as follows: ");
-//				
-//				System.out.println(a.getText());
-//				a.click();
-//				ActivityDetails.getText();
-				
-//				acnum.add(a);
-				
-//}
-//		}
+ 
 		
-		String acc1="24999";
-		@FindBy(css="a[href='activity.htm?id='24999']")
-		WebElement AccountNum;
-		
-//			public void ParticularAccountInfo(String Acnumber) {
-//				for(int i=0;i<Accounts.size();i++) {
-//					if (textArray[i]==Acnumber){
-//						
-//				}
-//				
-//			}
-//			
+		}
 		}
 		
 		
