@@ -1,4 +1,4 @@
-package testComponents;
+package TestComponents;
 
 
 	
@@ -17,8 +17,9 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import testComponents.BaseTests;
+ 
 import veer.selenium.selenium.BaseTest;
+import veer.selenium.selenium.BaseTests;
 
 	 
 
@@ -26,9 +27,9 @@ import veer.selenium.selenium.BaseTest;
 		
 
 		ExtentTest test;
-		ExtentReports	extent= Resource.exRepo.repo();
+		ExtentReports	extent= Extent.exRepo.repo();
 		 
-		ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe
+		public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>(); //Thread safe
 //		@BeforeSuite
 		@Override
 		public void onTestStart(ITestResult result) {
@@ -124,7 +125,10 @@ import veer.selenium.selenium.BaseTest;
 			
 		}
 		
-		
+		public static void logMessage(String message) {
+			extentTest.get().log(Status.INFO, message);
+	    }
+
 		
 		
 

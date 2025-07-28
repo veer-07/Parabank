@@ -1,22 +1,17 @@
 package veer.selenium.selenium.POM;
 
 import java.io.IOException;
-<<<<<<< HEAD
-=======
 import java.time.Duration;
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 import java.util.Scanner;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-<<<<<<< HEAD
-=======
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+
 
 import veer.selenium.selenium.Abstracts;
 
@@ -57,9 +52,7 @@ public WebDriver driver;
 	WebElement RegButton;
 	@FindBy(css="a[href='logout.htm']")
 	WebElement logout;
-<<<<<<< HEAD
-	
-	
+ 
 //	Scanner sc=new Scanner(System.in);
 //	System.out.print("Enter the values");
 //	String v=sc.next();
@@ -81,24 +74,19 @@ public WebDriver driver;
 //	public void name(String fname,String lname) {
 //		
 //	}
-	
-	public  void register(String uname, String Password) throws InterruptedException, IOException {
-		explicitwait(500);
-		Thread.sleep(1000);
-=======
 	@FindBy(xpath="//span[@id=\'customer.username.errors\']")
 	WebElement dupName;
 	
 	@FindBy(xpath="//p[contains(text(),'Your account was created successfully. You are now logged in.')]")
 	WebElement loginmsg;
 	
-	
+
 
 	
 	public  void register(String name, String lname,String address,String cities,String states,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException {
 //		explicitwait(500);
 //		Thread.sleep(1000);
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+ 
 		regi.click();
 		Fname.sendKeys(uname);
 		Lname.sendKeys(lname);
@@ -110,7 +98,7 @@ public WebDriver driver;
 		ssn.sendKeys(ssns);
 		Uname.sendKeys(uname);
 		password.sendKeys(Password);
-<<<<<<< HEAD
+ 
 		confirm.sendKeys(Password);
 		getScreenshot("testcase1",driver);
 		Thread.sleep(100);
@@ -118,7 +106,7 @@ public WebDriver driver;
 		
 		
 //		logout.click();
-=======
+ 
 		confirm.sendKeys(con);
 //		getScreenshot("testcase"+""+Math.random(),driver);
 //		Thread.sleep(100);
@@ -128,13 +116,12 @@ public WebDriver driver;
 	//	System.out.println(msgs);
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 //		WebElement loginMessage = wait.until(ExpectedConditions.visibilityOf(loginmsg));
-		String msgs = dupName.getText();
-		Assert.assertTrue(false, msgs);
-		System.out.println(msgs);
-		String msg = loginmsg.getText();
-			System.out.println(msgs);
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
-		
+//		String msgs = dupName.getText();
+//		Assert.assertTrue(false, msgs);
+//		System.out.println(msgs);
+//		String msg = loginmsg.getText();
+//			System.out.println(msgs);
+ 
 	}
 	
 	@FindBy(css="a[href='updateprofile.htm']")
@@ -146,7 +133,7 @@ public WebDriver driver;
 	@FindBy(css="#rightPanel")
 	WebElement updateMessage;
 	
-<<<<<<< HEAD
+ 
 public void updateContact() throws InterruptedException {
 	Thread.sleep(1000);
 	updatecontact.click();
@@ -160,8 +147,9 @@ public void updateContact() throws InterruptedException {
 	updatebutton.click();
 	Thread.sleep(1000);
 	System.out.println(updateMessage.getText());
+}
 	
-=======
+ 
 public void DuplicateAcc(String name, String lname,String address,String cities,String states,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException {
 	 
 	
@@ -186,8 +174,7 @@ public void DuplicateAcc(String name, String lname,String address,String cities,
 		String msg = dupName.getText();
 		boolean isDuplicateShown = msg.contains("already exists");
 		Assert.assertFalse(isDuplicateShown, "Duplicate name found: " + msg);
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
-		
+ 
 		
 		
 		

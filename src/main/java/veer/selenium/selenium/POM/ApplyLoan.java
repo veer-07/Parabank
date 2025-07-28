@@ -32,25 +32,18 @@ public class ApplyLoan extends Abstracts{
 //	
 	@FindBy(css="#fromAccountId")
 	WebElement FromAcct;
-<<<<<<< HEAD
+ 
 //	
 	@FindBy(xpath="//input[@value='Apply Now']")
 	WebElement ApplyBtn;
 
-	String Account="16896";
-	
-=======
-	
 	@FindBy(css="#requestLoanResult") 
 	WebElement LoanOverview;
 	
-//	
-	@FindBy(xpath="(//input[@value='Apply Now'])[1]")
-	WebElement ApplyBtn;
-
+ 
 //	String Account="16896";
 	String Account="13344";
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+ 
 public void ApplyLoans(String amt1,String amt2) throws InterruptedException   {
 //	Thread.sleep(1500);
 	LoanReq.click();
@@ -58,12 +51,12 @@ public void ApplyLoans(String amt1,String amt2) throws InterruptedException   {
 	LoanAmt.sendKeys(amt1);
 	downPay.sendKeys(amt2);
 	selectDropdownByValue(FromAcct,Account);
-<<<<<<< HEAD
+ 
 	Thread.sleep(1000);
 	ApplyBtn.click();
 
-}
-=======
+
+ 
 	Thread.sleep(100);
 	ApplyBtn.click();
 	Thread.sleep(1000);
@@ -73,7 +66,7 @@ public void ApplyLoans(String amt1,String amt2) throws InterruptedException   {
 
 }
  
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+ 
 
 
 

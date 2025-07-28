@@ -28,11 +28,11 @@ public class defn  extends POM{
 	public void step_with_username_and_password(String Uname, String pass) throws InterruptedException, IOException{
 		
 		Registartion r=new Registartion(driver);
-<<<<<<< HEAD
-		r.register(Uname,  pass);
-=======
+ 
+//		r.register(Uname,  pass);
+ 
 //		r.register(Uname,  pass, pass, pass, pass, pass, pass, pass, pass, pass);
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+ 
 		
 	}
 }

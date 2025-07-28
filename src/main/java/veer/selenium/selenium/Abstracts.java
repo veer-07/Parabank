@@ -16,20 +16,17 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.FindBy;
-<<<<<<< HEAD
+ 
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-=======
+ 
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
-
 import veer.selenium.selenium.POM.POM;
 
 public class Abstracts {
-<<<<<<< HEAD
+ 
 // public WebDriver driver;
 
  public WebDriver driver;
@@ -77,10 +74,10 @@ public class Abstracts {
 //			
 //		}
 		
-=======
+ 
 	
 	
- public WebDriver driver;
+  
  public void   Abstracts(WebDriver driver) {
 	 this.driver=driver;
 	 PageFactory.initElements(driver, this);
@@ -91,7 +88,7 @@ public class Abstracts {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(sec))
 ;	}
  
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+ 
 		public void explicitwait(int sec) {
 			WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(5));
 		}
@@ -152,11 +149,7 @@ public class Abstracts {
 		        Select select = new Select(dropdownElement);
 		        select.selectByValue(value);
 		    }
-<<<<<<< HEAD
-=======
 
-		   
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 	}
 
 

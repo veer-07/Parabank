@@ -6,16 +6,28 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
-			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -24,37 +36,25 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/SELDrivers/poi-5.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/poi-ooxml-5.3.0.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/selenium-server-4.22.0.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/javafaker-1.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/commons-io-2.16.1/commons-io-2.16.1.jar"/>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+	<classpathentry kind="lib" path="C:/Users/veere/.p2/pool/plugins/org.testng_7.11.0.r202503091654.jar" sourcepath="C:/Users/veere/.p2/pool/plugins/org.testng.source_7.11.0.r202503091654.jar"/>
+	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar" sourcepath="C:/Users/veere/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="optional" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
-		<attributes>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="optional" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/SELDrivers/testng-7.10.2.jar"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/cucumber-java-7.20.1.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/ExcelData"/>
-	<classpathentry kind="src" path="/Framework_BBD_API+PARABANK"/>
-	<classpathentry kind="lib" path="C:/SELDrivers/extentreports-2.41.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar" sourcepath="C:/Users/veere/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="com.aventstack"/>
-			<attribute name="maven.artifactId" value="extentreports"/>
-			<attribute name="maven.version" value="5.0.9"/>
+			<attribute name="maven.groupId" value="org.apache.poi"/>
+			<attribute name="maven.artifactId" value="poi"/>
+			<attribute name="maven.version" value="5.2.3"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/veere/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar" sourcepath="C:/Users/veere/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.apache.poi"/>
+			<attribute name="maven.artifactId" value="poi-ooxml"/>
+			<attribute name="maven.version" value="5.2.3"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/SELDrivers/cucumber-java-7.20.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

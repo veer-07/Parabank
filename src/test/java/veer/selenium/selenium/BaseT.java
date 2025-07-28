@@ -6,10 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
- 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import testComponents.BaseTests;
+import com.aventstack.extentreports.Status;
+
+import Extent.exRepo;
+import TestComponents.reports;
 import veer.selenium.selenium.POM.ApplyLoan;
 import veer.selenium.selenium.POM.Billpay;
 //import TestComponents.BaseTests;
@@ -18,10 +21,10 @@ import veer.selenium.selenium.POM.POM;
 import veer.selenium.selenium.POM.Registartion;
 import veer.selenium.selenium.POM.TransferFund;
 import veer.selenium.selenium.POM.UpdateContact;
-
+@Listeners(reports.class)
 public class BaseT extends BaseTests {
 
-
+	reports reportManager = new reports();
 		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class)
 		public void ARegistrUser(String name, String lname,String address,String cities,String state,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException  {
 			BaseTests.initialization();
@@ -33,7 +36,7 @@ public class BaseT extends BaseTests {
 						 
 	}
 	
-		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class, retryAnalyzer=testComponents.Retry.class)
+		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class, retryAnalyzer=TestComponents.Retry.class)
 		public void DupAcc(String name, String lname,String address,String cities,String state,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException  {
 			BaseTests.initialization();
 //			driver.get("https://parabank.parasoft.com/parabank/index.htm");
@@ -46,7 +49,7 @@ public class BaseT extends BaseTests {
 	
 		
 		
-		@Test(retryAnalyzer=testComponents.Retry.class)
+		@Test(retryAnalyzer=TestComponents.Retry.class)
 		public void BInCorrPass() throws InterruptedException, IOException {
 			
 			BaseTests.initialization();
@@ -69,7 +72,7 @@ public class BaseT extends BaseTests {
  
 			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			POM c=new POM(driver);
-			c.login("","");
+//			c.login("","");
  
 //			POM c=new POM(driver);
 			c.login();
@@ -101,6 +104,7 @@ public class BaseT extends BaseTests {
 		
 	
 		@Test
+		
 		public void EACCOverview() throws InterruptedException, IOException {
 			String Uname="john";
 			String Pass="demo";
@@ -110,7 +114,7 @@ public class BaseT extends BaseTests {
 			Thread.sleep(1000);
 			POM c=new POM(driver);
 			c.login( );
-			
+			reportManager.logMessage("Loggedin Succesfully");
 			String a=driver.findElement(By.cssSelector(".title")).getText();
 			
 			boolean z=a.equalsIgnoreCase("Accounts Overview");

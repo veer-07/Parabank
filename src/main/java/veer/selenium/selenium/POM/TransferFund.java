@@ -36,15 +36,15 @@ public class TransferFund extends Abstracts{
 	@FindBy(css="#showResult")
 	WebElement transferResults;
 	
-<<<<<<< HEAD
-public void TransferFunds(String Acc1,String Acc2) throws InterruptedException {
-	transferbutton.click();
-	amounts.sendKeys("1290");
-=======
+ 
+//public void TransferFunds(String Acc1,String Acc2) throws InterruptedException {
+//	transferbutton.click();
+//	amounts.sendKeys("1290");
+ 
 public void TransferFunds(String Acc1,String Acc2,String amt) throws InterruptedException {
 	transferbutton.click();
 	amounts.sendKeys(amt);
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
+ 
 	Select dropdown = new Select(options);
 	Thread.sleep(1000);
 	selectDropdownByVisibleText(options,Acc1);

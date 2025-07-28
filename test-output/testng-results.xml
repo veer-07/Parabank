@@ -1,51 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-08T02:23:30 IST" name="Suite" finished-at="2025-02-08T02:24:01 IST" duration-ms="31228">
+  <suite started-at="2025-07-29T01:41:56 IST" name="Default suite" finished-at="2025-07-29T01:42:09 IST" duration-ms="12371">
     <groups>
     </groups>
-    <test started-at="2025-02-08T02:23:30 IST" name="Test" finished-at="2025-02-08T02:24:01 IST" duration-ms="31228">
+    <test started-at="2025-07-29T01:41:56 IST" name="Default test" finished-at="2025-07-29T01:42:09 IST" duration-ms="12371">
       <class name="veer.selenium.selenium.BaseT">
-        <test-method signature="ARegistrUser()[pri:0, instance:veer.selenium.selenium.BaseT@67304a40]" started-at="2025-02-08T02:23:30 IST" name="ARegistrUser" finished-at="2025-02-08T02:23:38 IST" duration-ms="8231" status="PASS">
+        <test-method signature="EACCOverview()[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-07-29T01:41:56 IST" name="EACCOverview" finished-at="2025-07-29T01:42:08 IST" duration-ms="11991" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ARegistrUser -->
-        <test-method signature="BInCorrPass()[pri:0, instance:veer.selenium.selenium.BaseT@67304a40]" started-at="2025-02-08T02:23:39 IST" name="BInCorrPass" finished-at="2025-02-08T02:23:49 IST" duration-ms="10403" status="PASS">
+        </test-method> <!-- EACCOverview -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-07-29T01:42:09 IST" name="tearDown" finished-at="2025-07-29T01:42:09 IST" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EACCOverview status=SUCCESS method=BaseT.EACCOverview()[pri:0, instance:veer.selenium.selenium.BaseT@362045c0] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BInCorrPass -->
-        <test-method signature="CLoginFieldBlank()[pri:0, instance:veer.selenium.selenium.BaseT@67304a40]" started-at="2025-02-08T02:23:49 IST" name="CLoginFieldBlank" finished-at="2025-02-08T02:23:54 IST" duration-ms="4643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CLoginFieldBlank -->
-        <test-method signature="DLoginPassMask()[pri:0, instance:veer.selenium.selenium.BaseT@67304a40]" started-at="2025-02-08T02:23:54 IST" name="DLoginPassMask" finished-at="2025-02-08T02:24:01 IST" duration-ms="6985" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DLoginPassMask -->
-      </class> <!-- veer.selenium.selenium.BaseT -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2025-07-20T15:29:11 IST" name="Default suite" finished-at="2025-07-20T15:29:25 IST" duration-ms="13107">
-    <groups>
-    </groups>
-    <test started-at="2025-07-20T15:29:11 IST" name="Default test" finished-at="2025-07-20T15:29:25 IST" duration-ms="13107">
-      <class name="veer.selenium.selenium.BaseT">
-        <test-method signature="Billpayee()[pri:0, instance:veer.selenium.selenium.BaseT@4278284b]" started-at="2025-07-20T15:29:12 IST" name="Billpayee" finished-at="2025-07-20T15:29:24 IST" duration-ms="12460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Billpayee -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:veer.selenium.selenium.BaseT@4278284b]" started-at="2025-07-20T15:29:24 IST" name="closeBrowser" finished-at="2025-07-20T15:29:25 IST" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
+        </test-method> <!-- tearDown -->
       </class> <!-- veer.selenium.selenium.BaseT -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
->>>>>>> 0bbdd3592a8011b54c47fb1918e2b78d61926ea0
 </testng-results>

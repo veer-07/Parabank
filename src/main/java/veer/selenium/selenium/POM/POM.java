@@ -17,9 +17,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import veer.selenium.selenium.Abstracts;
+//import veer.selenium.selenium.Abstracts;
+import veer.selenium.selenium.BaseTests;
 
-public class POM  extends Abstracts{
+public class POM  extends BaseTests{
+	 
 		public WebDriver driver;
 		@FindBy(css=".input")
 		WebElement username;
@@ -53,7 +55,7 @@ public class POM  extends Abstracts{
 			username.sendKeys(Uname);
 			password.sendKeys(passwords);
 
- 
+		}
 		public void login() throws IOException   {
 			Properties prp=new Properties();
 			FileInputStream fis=new FileInputStream("D:\\Java_Selenuim\\eclipse-workspace\\Final_ParaBank\\src\\main\\java\\Resource\\global.properties");
@@ -63,7 +65,8 @@ public class POM  extends Abstracts{
 			String Pass=prp.getProperty("Pass");
 			username.sendKeys(Unames);
 			password.sendKeys(Pass);
- 
+			highlightElement(username);
+			getScreenshot("Logins",driver);
 			submit.click();
 			
 		}
@@ -74,15 +77,17 @@ public class POM  extends Abstracts{
 		List<WebElement> aa;
 		
 		
-		public void AccInfo() throws InterruptedException {
+		public void AccInfo() throws InterruptedException, IOException {
 			for(WebElement a:aa) {
 				System.out.println("Account Overview");
 				System.out.println("==============================");
 				Thread.sleep(1000);
+				
 				System.out.println(a.getText()+"   ");
 			}
  
 		}
+		
 		@FindBy(xpath="//tr/td/a")
 		List<WebElement> Accounts;
 
@@ -116,7 +121,7 @@ public class POM  extends Abstracts{
  
 		
 		}
-		}
+		
 		
 		
 
