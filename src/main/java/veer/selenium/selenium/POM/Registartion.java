@@ -100,29 +100,22 @@ public WebDriver driver;
 		password.sendKeys(Password);
  
 		confirm.sendKeys(Password);
-		getScreenshot("testcase1",driver);
-		Thread.sleep(100);
-		RegButton.click();
-		
-		
-//		logout.click();
- 
-		confirm.sendKeys(con);
-//		getScreenshot("testcase"+""+Math.random(),driver);
-//		Thread.sleep(100);
-		RegButton.click();
-//		Thread.sleep(100);
-	//	String msgs = loginmsg.getText();
-	//	System.out.println(msgs);
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-//		WebElement loginMessage = wait.until(ExpectedConditions.visibilityOf(loginmsg));
-//		String msgs = dupName.getText();
-//		Assert.assertTrue(false, msgs);
-//		System.out.println(msgs);
-//		String msg = loginmsg.getText();
-//			System.out.println(msgs);
- 
+		getScreenshot("formFilled", driver);
+	    RegButton.click();
+
+	    // Pause to let the page update
+	    Thread.sleep(500);
+	    String windowName = driver.getTitle();
+
+	    System.out.println("Current window title: " + windowName);
+
+	    Assert.assertTrue(
+	        windowName.equalsIgnoreCase("ParaBank | Customer Created"),
+	        "Test failed: Expected title 'ParaBank | Customer Created' but got '" + windowName + "'"
+	    );
 	}
+
+
 	
 	@FindBy(css="a[href='updateprofile.htm']")
 	WebElement updatecontact;

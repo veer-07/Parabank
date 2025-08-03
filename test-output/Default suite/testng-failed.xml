@@ -5,8 +5,8 @@
     <classes>
       <class name="veer.selenium.selenium.BaseT">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="CLoginFieldBlank"/>
+          <include name="tearDown"/>
+          <include name="ARegistrUser" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- veer.selenium.selenium.BaseT -->
     </classes>

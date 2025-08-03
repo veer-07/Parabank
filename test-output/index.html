@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\veere\AppData\Local\Temp\testng-eclipse-699022812\testng-customsuite.xml</span>
+                    <span>C:\Users\veere\AppData\Local\Temp\testng-eclipse--607386966\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="veer.selenium.selenium.BaseT" class="method navigator-link" hash-for-method="EACCOverview">EACCOverview</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="veer.selenium.selenium.BaseT" class="method navigator-link" hash-for-method="ARegistrUser(dsgfgfhds, fghgfgd, gfgfn, gnhc, ag, gfnxn, gnfxb, ngfv, rehrg, 3543w35, 3543w35)">ARegistrUser(dsgfgfhds, fghgfgd, gfgfn, gnhc, ag, gfnxn, gnfxb, ngfv, rehrg, 3543w35, 3543w35)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="veer.selenium.selenium.BaseT" class="method navigator-link" hash-for-method="ARegistrUser(32, 546, 4574657, 4745, 4757, 75474, 47, 74, 47467, 4676, 4676)">ARegistrUser(32, 546, 4574657, 4745, 4757, 75474, 47, 74, 47467, 4676, 4676)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="veer.selenium.selenium.BaseT" class="method navigator-link" hash-for-method="ARegistrUser(1234, regrg, 1234, regrg, dsgfgfhds, fghgfgd, dsgfgfhds, fghgfgd, reahg, hera, hera)">ARegistrUser(1234, regrg, 1234, regrg, dsgfgfhds, fghgfgd, dsgfgfhds, fghgfgd, reahg, hera, hera)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="veer.selenium.selenium.BaseT" class="method navigator-link" hash-for-method="ARegistrUser(1234, regrg, tyae, aegh, arg, eryh, regh, reahg, trhd, 1234, 1234)">ARegistrUser(1234, regrg, tyae, aegh, arg, eryh, regh, reahg, trhd, 1234, 1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,25 +133,186 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">veer.selenium.selenium.BaseT</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="EACCOverview">
-                  </a> <!-- EACCOverview -->
-                  <span class="method-name">EACCOverview</span>
+                  <a name="ARegistrUser(dsgfgfhds, fghgfgd, gfgfn, gnhc, ag, gfnxn, gnfxb, ngfv, rehrg, 3543w35, 3543w35)">
+                  </a> <!-- ARegistrUser(dsgfgfhds, fghgfgd, gfgfn, gnhc, ag, gfnxn, gnfxb, ngfv, rehrg, 3543w35, 3543w35) -->
+                  <span class="method-name">ARegistrUser</span>
+                  <span class="parameters">(dsgfgfhds,fghgfgd,gfgfn,gnhc,ag,gfnxn,gnfxb,ngfv,rehrg,3543w35,3543w35)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test failed: Expected title &apos;ParaBank | Customer Created&apos; but got &apos;ParaBank | Register for Free Online Account Access&apos; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+	at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ARegistrUser(32, 546, 4574657, 4745, 4757, 75474, 47, 74, 47467, 4676, 4676)">
+                  </a> <!-- ARegistrUser(32, 546, 4574657, 4745, 4757, 75474, 47, 74, 47467, 4676, 4676) -->
+                  <span class="method-name">ARegistrUser</span>
+                  <span class="parameters">(32,546,4574657,4745,4757,75474,47,74,47467,4676,4676)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test failed: Expected title &apos;ParaBank | Customer Created&apos; but got &apos;ParaBank | Register for Free Online Account Access&apos; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+	at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ARegistrUser(1234, regrg, 1234, regrg, dsgfgfhds, fghgfgd, dsgfgfhds, fghgfgd, reahg, hera, hera)">
+                  </a> <!-- ARegistrUser(1234, regrg, 1234, regrg, dsgfgfhds, fghgfgd, dsgfgfhds, fghgfgd, reahg, hera, hera) -->
+                  <span class="method-name">ARegistrUser</span>
+                  <span class="parameters">(1234,regrg,1234,regrg,dsgfgfhds,fghgfgd,dsgfgfhds,fghgfgd,reahg,hera,hera)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test failed: Expected title &apos;ParaBank | Customer Created&apos; but got &apos;ParaBank | Register for Free Online Account Access&apos; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+	at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ARegistrUser(1234, regrg, tyae, aegh, arg, eryh, regh, reahg, trhd, 1234, 1234)">
+                  </a> <!-- ARegistrUser(1234, regrg, tyae, aegh, arg, eryh, regh, reahg, trhd, 1234, 1234) -->
+                  <span class="method-name">ARegistrUser</span>
+                  <span class="parameters">(1234,regrg,tyae,aegh,arg,eryh,regh,reahg,trhd,1234,1234)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Test failed: Expected title &apos;ParaBank | Customer Created&apos; but got &apos;ParaBank | Register for Free Online Account Access&apos; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+	at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\veere\AppData\Local\Temp\testng-eclipse-699022812\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\veere\AppData\Local\Temp\testng-eclipse--607386966\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +323,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;veer.selenium.selenium.BaseT&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;EACCOverview&quot;/&gt;
+          &lt;include name=&quot;ARegistrUser&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- veer.selenium.selenium.BaseT --&gt;
     &lt;/classes&gt;
@@ -189,16 +365,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EACCOverview')
+data.setCell(0, 1, 'ARegistrUser')
 data.setCell(0, 2, 'veer.selenium.selenium.BaseT')
-data.setCell(0, 3, 11991);
+data.setCell(0, 3, 8901);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ARegistrUser')
+data.setCell(1, 2, 'veer.selenium.selenium.BaseT')
+data.setCell(1, 3, 6925);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ARegistrUser')
+data.setCell(2, 2, 'veer.selenium.selenium.BaseT')
+data.setCell(2, 3, 6514);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ARegistrUser')
+data.setCell(3, 2, 'veer.selenium.selenium.BaseT')
+data.setCell(3, 3, 6044);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -227,7 +415,7 @@ return data;
                 <br/>
                 <span class="ignored-method-name">BInCorrPass</span>
                 <br/>
-                <span class="ignored-method-name">ARegistrUser</span>
+                <span class="ignored-method-name">EACCOverview</span>
                 <br/>
                 <span class="ignored-method-name">CLoginFieldBlank</span>
                 <br/>
@@ -249,12 +437,44 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">veer.selenium.selenium.BaseT</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">EACCOverview</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ARegistrUser(1234, regrg, tyae, aegh, arg, eryh, regh, reahg, trhd, 1234, 1234)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=EACCOverview status=SUCCESS method=BaseT.EACCOverview()[pri:0, instance:veer.seleni...)</span>
-                <span class="method-start">12196 ms</span>
+                <span class="method-name">tearDown([TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.St...)</span>
+                <span class="method-start">7151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ARegistrUser(dsgfgfhds, fghgfgd, gfgfn, gnhc, ag, gfnxn, gnfxb, ngfv, rehrg, 3543w35, 3543w35)</span>
+                <span class="method-start">7280 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.St...)</span>
+                <span class="method-start">13488 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ARegistrUser(1234, regrg, 1234, regrg, dsgfgfhds, fghgfgd, dsgfgfhds, fghgfgd, reahg, hera, hera)</span>
+                <span class="method-start">13607 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.St...)</span>
+                <span class="method-start">20268 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ARegistrUser(32, 546, 4574657, 4745, 4757, 75474, 47, 74, 47467, 4676, 4676)</span>
+                <span class="method-start">20422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.St...)</span>
+                <span class="method-start">29471 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

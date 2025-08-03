@@ -1,21 +1,454 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="9" total="13" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T01:41:56 IST" name="Default suite" finished-at="2025-07-29T01:42:09 IST" duration-ms="12371">
+  <suite started-at="2025-08-03T21:03:54 IST" name="Default suite" finished-at="2025-08-03T21:04:25 IST" duration-ms="30663">
     <groups>
     </groups>
-    <test started-at="2025-07-29T01:41:56 IST" name="Default test" finished-at="2025-07-29T01:42:09 IST" duration-ms="12371">
+    <test started-at="2025-08-03T21:03:54 IST" name="Default test" finished-at="2025-08-03T21:04:25 IST" duration-ms="30663">
       <class name="veer.selenium.selenium.BaseT">
-        <test-method signature="EACCOverview()[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-07-29T01:41:56 IST" name="EACCOverview" finished-at="2025-07-29T01:42:08 IST" duration-ms="11991" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EACCOverview -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-07-29T01:42:09 IST" name="tearDown" finished-at="2025-07-29T01:42:09 IST" duration-ms="127" status="PASS">
+        <test-method signature="ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:03:55 IST" name="ARegistrUser" data-provider="excelDatas" finished-at="2025-08-03T21:04:02 IST" duration-ms="6925" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=EACCOverview status=SUCCESS method=BaseT.EACCOverview()[pri:0, instance:veer.selenium.selenium.BaseT@362045c0] output={null}]]]>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[regrg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tyae]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[aegh]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[arg]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[eryh]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[regh]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[reahg]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[trhd]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ARegistrUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:02 IST" name="tearDown" finished-at="2025-08-03T21:04:02 IST" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:02 IST" name="ARegistrUser" data-provider="excelDatas" finished-at="2025-08-03T21:04:08 IST" duration-ms="6044" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dsgfgfhds]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fghgfgd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gfgfn]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[gnhc]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[ag]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[gfnxn]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[gnfxb]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ngfv]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[rehrg]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[3543w35]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[3543w35]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ARegistrUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:09 IST" name="tearDown" finished-at="2025-08-03T21:04:09 IST" duration-ms="117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:09 IST" name="ARegistrUser" data-provider="excelDatas" finished-at="2025-08-03T21:04:15 IST" duration-ms="6514" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[regrg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[regrg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[dsgfgfhds]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[fghgfgd]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[dsgfgfhds]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[fghgfgd]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[reahg]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[hera]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[hera]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ARegistrUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:15 IST" name="tearDown" finished-at="2025-08-03T21:04:16 IST" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:16 IST" name="ARegistrUser" data-provider="excelDatas" finished-at="2025-08-03T21:04:24 IST" duration-ms="8901" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[32]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[546]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4574657]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[4745]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4757]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[75474]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[47]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[74]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[47467]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[4676]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[4676]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected title 'ParaBank | Customer Created' but got 'ParaBank | Register for Free Online Account Access' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at veer.selenium.selenium.POM.Registartion.register(Registartion.java:112)
+at veer.selenium.selenium.BaseT.ARegistrUser(BaseT.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ARegistrUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0]" started-at="2025-08-03T21:04:25 IST" name="tearDown" finished-at="2025-08-03T21:04:25 IST" duration-ms="106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ARegistrUser status=FAILURE method=BaseT.ARegistrUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:veer.selenium.selenium.BaseT@362045c0] output={null}]]]>
               </value>
             </param>
           </params>

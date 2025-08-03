@@ -50,12 +50,12 @@ public class POM  extends BaseTests{
 //			username.sendKeys(uname);
 //			password.sendKeys(pass);
 //		}
-		public void login(String Uname,String passwords) throws InterruptedException {
-			
-			username.sendKeys(Uname);
-			password.sendKeys(passwords);
-
-		}
+//		public void login(String Uname,String passwords) throws InterruptedException {
+//			
+//			username.sendKeys(Uname);
+//			password.sendKeys(passwords);
+//
+//		}
 		public void login() throws IOException   {
 			Properties prp=new Properties();
 			FileInputStream fis=new FileInputStream("D:\\Java_Selenuim\\eclipse-workspace\\Final_ParaBank\\src\\main\\java\\Resource\\global.properties");
@@ -70,6 +70,26 @@ public class POM  extends BaseTests{
 			submit.click();
 			
 		}
+		
+		
+		
+		
+		public void loginWithCustomCreds(String Uname, String Password) throws IOException   {
+			Properties prp=new Properties();
+			FileInputStream fis=new FileInputStream("D:\\Java_Selenuim\\eclipse-workspace\\Final_ParaBank\\src\\main\\java\\Resource\\global.properties");
+			prp.load(fis);
+			driver.get(prp.getProperty("url"));
+			String Unames=prp.getProperty("Uname");
+			String Pass=prp.getProperty("Pass");
+			username.sendKeys(Uname);
+			password.sendKeys(Password);
+			highlightElement(username);
+			getScreenshot("Logins",driver);
+			submit.click();
+			
+		}
+		
+		
 		@FindBy(xpath="//tr/td")
 		List<WebElement> acc;
 		

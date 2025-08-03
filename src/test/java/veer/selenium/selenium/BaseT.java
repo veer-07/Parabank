@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 
-import Extent.exRepo;
+import Resource.exRepo;
 import TestComponents.reports;
 import veer.selenium.selenium.POM.ApplyLoan;
 import veer.selenium.selenium.POM.Billpay;
@@ -25,10 +25,10 @@ import veer.selenium.selenium.POM.UpdateContact;
 public class BaseT extends BaseTests {
 
 	reports reportManager = new reports();
-		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class)
+		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class, retryAnalyzer=TestComponents.Retry.class)
 		public void ARegistrUser(String name, String lname,String address,String cities,String state,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException  {
 			BaseTests.initialization();
-//			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 
 			Registartion r=new Registartion(driver);
 			r.register(name,lname,address,cities,state,zipcode,phone,ssns,uname,Password,con);
@@ -36,10 +36,10 @@ public class BaseT extends BaseTests {
 						 
 	}
 	
-		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class, retryAnalyzer=TestComponents.Retry.class)
+		@Test(dataProvider="excelDatas", dataProviderClass = Resource.ExcelDataProvider.class)
 		public void DupAcc(String name, String lname,String address,String cities,String state,String zipcode,String phone, String ssns, String uname, String Password,String con) throws InterruptedException, IOException  {
 			BaseTests.initialization();
-//			driver.get("https://parabank.parasoft.com/parabank/index.htm");
+			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 
 			Registartion r=new Registartion(driver);
 			r.DuplicateAcc(name, lname, address, cities, state, zipcode, phone, ssns, uname, Password, con);
@@ -55,7 +55,7 @@ public class BaseT extends BaseTests {
 			BaseTests.initialization();
 //			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			POM c=new POM(driver);
-			c.login();
+			c.loginWithCustomCreds("Uname", "pass");
  
 			String Actual= driver.findElement(By.cssSelector(".error")).getText();
 //			String expected=Actual.equalsIgnoreCase(Actual);
@@ -75,7 +75,7 @@ public class BaseT extends BaseTests {
 //			c.login("","");
  
 //			POM c=new POM(driver);
-			c.login();
+			c.loginWithCustomCreds("", "");
  
 			String Actual= driver.findElement(By.cssSelector(".error")).getText();
 			Assert.assertEquals(Actual,"Please enter a username and password.");
@@ -88,7 +88,7 @@ public class BaseT extends BaseTests {
 						BaseTests.initialization();
 
 			POM c=new POM(driver);
-			c.login("1234","12345*");
+			c.loginWithCustomCreds("1234","12345*");
  
  
 			String enteredPassword = driver.findElement(By.xpath("//input[@name='password']")).getAttribute("name");
@@ -109,7 +109,7 @@ public class BaseT extends BaseTests {
 			String Uname="john";
 			String Pass="demo";
  
-			BaseTests.initialization();
+			BaseTests.initialization(); 
 //			driver.get("https://parabank.parasoft.com/parabank/index.htm");
 			Thread.sleep(1000);
 			POM c=new POM(driver);
@@ -126,9 +126,6 @@ public class BaseT extends BaseTests {
 		public void AppLyLoan() throws IOException, InterruptedException {
 			
 			BaseTests.initialization();
-//			driver.get("https://parabank.parasoft.com/parabank/index.htm");
-//			String Uname="john";
-//			String Pass="demo";
 			String amt1="10";
 			String amt2="78";
 			POM c=new POM(driver);
@@ -136,7 +133,7 @@ public class BaseT extends BaseTests {
 			
 			ApplyLoan a=new ApplyLoan(driver);
 			a.ApplyLoans(amt1,amt2);
-//			System.out.println(Overview);
+
 			
 		}
 		
